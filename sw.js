@@ -76,9 +76,8 @@ self.addEventListener('push', function (e) {
 });
 
 self.addEventListener('notificationclick', (e => {
-  let payload = e.notification.data;
   if (e.action === "explore")
-    clients.openWindow(payload?.["url"]);
+    clients.openWindow("http://merry-tanuki-7ee9cd.netlify.app");
   if (e.action === "close")
     e.notification.close();
 }));
