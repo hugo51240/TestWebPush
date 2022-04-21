@@ -1,0 +1,28 @@
+{
+    "short_name": "WebPush",
+    "name": "Test WebPush",
+    "theme_color": "#eb5252",
+    "background_color": "#000000",
+    "display": "standalone",
+    "Scope": "/",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "images/pwa.png",
+            "type": "image/png",
+            "sizes": "48x48",
+            "purpose": "maskable"
+        },
+        {
+            "src": "images/pwa.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "images/pwa.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
+    "start-url": "/index.html"
+}
