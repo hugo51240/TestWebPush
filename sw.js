@@ -4,7 +4,6 @@ const CACHE = [
   '/index.html',
   '/style.css',
   '/manifest.webmanifest',
-  '/push.js',
   '/images/pwa-48x48.png',
   '/images/pwa-192x192.png',
   '/images/pwa-512x512.png',
