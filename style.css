@@ -13,8 +13,10 @@ button {
     border-radius: 10px;
     background-color: blue;
     color: white;
+    width: 100px;
+    height: 40px;
 }
 
 button:hover {
-    background-color: aqua;
+    background-color: rgb(45, 50, 112);
 }
