@@ -10,6 +10,7 @@ const CACHE = [
 ];
 
 self.addEventListener('install', (e) => {
+  self.skipWaiting();
   console.log('[Service Worker] installation');
   e.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
