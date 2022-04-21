@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <button onclick="subscribe()">Subscribe</button>
-    
+    <h1>Test Push (Web Push)</h1>
+    <button onclick="subscribe()">Subscribe Notif</button>
+
     <script>
-        addEventListener('load', async() => {
+        addEventListener('load', async () => {
             let sw = await navigator.serviceWorker.register('./sw.js');
             console.log(sw);
         });
@@ -26,4 +30,5 @@
     </script>
 
 </body>
+
 </html>

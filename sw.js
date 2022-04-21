@@ -23,10 +23,10 @@ self.addEventListener('push', function (e) {
   );
 });
 
-self.addEventListener('notificationclick', (e) => {
+self.addEventListener('notificationclick', (e => {
   let payload = e.notification.data;
   if (e.action === "explore")
-    clients.openWindow(paylaod?.["url"]);
+    clients.openWindow(payload?.["url"]);
   if (e.action === "close")
     e.notification.close();
-})
+}));

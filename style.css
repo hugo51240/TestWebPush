@@ -1,0 +1,19 @@
+body {
+    padding: 10px;
+    align-items: center;
+    background-color: lightblue;
+}
+
+h1 {
+    color: black;
+    size: 10%;
+}
+
+button {
+    border-radius: 10px;
+    color: blue;
+}
+
+button:hover {
+    color: aqua;
+}
