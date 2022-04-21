@@ -1,5 +1,5 @@
 body {
-    padding: 10px;
+    padding-left: 10px;
     align-items: center;
     background-color: lightblue;
 }
@@ -12,6 +12,7 @@ h1 {
 button {
     border-radius: 10px;
     background-color: blue;
+    color: white;
 }
 
 button:hover {
