@@ -8,20 +8,20 @@
     "orientation": "portrait",
     "icons": [
         {
-            "src": "images/pwa.png",
+            "src": "images/pwa-48x48.png",
             "type": "image/png",
             "sizes": "48x48",
             "purpose": "maskable"
         },
         {
-            "src": "images/pwa.png",
-            "type": "image/png",
-            "sizes": "96x96"
-        },
-        {
-            "src": "images/pwa.png",
+            "src": "images/pwa-192x192.png",
             "type": "image/png",
             "sizes": "192x192"
+        },
+        {
+            "src": "images/pwa-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
         }
     ],
     "start-url": "/index.html"
