@@ -30,8 +30,14 @@
                 applicationServerKey: 'BHA6KBBYvqHcdljFv3OuHBlGMQBkJGaW_eXQz2TzOqlonpkIQNmHq-IOUeE4Sdtv-CoPnH4I50Ir3rfyTLxFF6c'
             });
             console.log(JSON.stringify(push));
-            const ENDPOINT = JSON.stringify(push);
         }
+
+
+        let push2 = await sw.pushManager.subscribe({
+            userVisibleOnly: true,
+            applicationServerKey: 'BHA6KBBYvqHcdljFv3OuHBlGMQBkJGaW_eXQz2TzOqlonpkIQNmHq-IOUeE4Sdtv-CoPnH4I50Ir3rfyTLxFF6c'
+        });
+        const ENDPOINT = JSON.stringify(push2);
         module.exports = { ENDPOINT };
 
     </script>
