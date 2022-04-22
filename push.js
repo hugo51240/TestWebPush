@@ -1,4 +1,5 @@
 var push = require('web-push');
+const { ENDPOINT } = require('./index.html');
 
 let vapidKey = {
     publicKey: 'BHA6KBBYvqHcdljFv3OuHBlGMQBkJGaW_eXQz2TzOqlonpkIQNmHq-IOUeE4Sdtv-CoPnH4I50Ir3rfyTLxFF6c',
@@ -12,11 +13,20 @@ push.setVapidDetails('mailto:test@test.com', vapidKey.publicKey, vapidKey.privat
 */
 
 let sub = {
-    endpoint: "https://fcm.googleapis.com/fcm/send/f7xzQNCH5bo:APA91bGTNo1DdsBU9CU0lfIAKf0e6aNPWMRfQslZEesYc6j0yJBxKYJknfDJNbFgo1mR3emdyyBUsed5CpDgja2_I8L0laDlXCZntLSf-_q0rMlJPODEacAzKYKSfZOGMU5SfklMRP-I",
+    endpoint: "https://fcm.googleapis.com/fcm/send/eOvbUUtpw4M:APA91bE1_UKaW2SPSmFj0SklyKapL3Ci2TZ86JxkuS3kX5euVYEYkO4vPjh_gGVPvAThZ_xajQ4mON98RODbNOXAXHhduovEYCPb6l60Q0vIoXRRdmZLPz2BPYWsIeSbUBnUAaY-MJMS",
     expirationTime: true,
     keys: {
-        p256dh: "BEuYqEMU6UPMXGR0NrKDgbCY8JzwHyXscxD27BJWbbxUoDwAmFS-kRJSudxzadXmj_Gh7GSRnTbDaIFd7UnDzXc",
-        auth: "nMBjwsuqvKqCk3UwRe6jJw"
+        p256dh: "BM-tN4OedjuKi-BiFZefTUvzsJJcsvAHNICfpDfdam3t__btQO2KV5k3J-HhtRFUoidot5vkcehrj67_LwZGRWE",
+        auth: "z1La_cvtn_4d1JbEx5oeKA"
+    }
+};
+
+let sbubis = {
+    endpoint: ENDPOINT.endpoint,
+    expirationTime: ENDPOINT.expirationTime,
+    keys: {
+        auth: ENDPOINT.auth,
+        p256dh: ENDPOINT.p256dh
     }
 };
 
@@ -32,4 +42,7 @@ const options = {
 }
 
 push.sendNotification(sub, payload, options);
+push.sendNotification(sbubis, payload, options);
+
+
 
