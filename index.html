@@ -32,7 +32,7 @@
             console.log(JSON.stringify(push));
         }
 
-        export const ENDPOINT = async () => {
+        const ENDPOINT = async () => {
             let sw = navigator.serviceWorker.ready;
             let push2 = sw.pushManager.subscribe({
                 userVisibleOnly: true,
@@ -42,6 +42,7 @@
         }
 
     </script>
+    <script src="push.js"></script>
 
 </body>
 
