@@ -1,12 +1,5 @@
 var push = require('web-push');
 
-let sw = navigator.serviceWorker.ready;
-let push2 = sw.pushManager.subscribe({
-    userVisibleOnly: true,
-    applicationServerKey: 'BHA6KBBYvqHcdljFv3OuHBlGMQBkJGaW_eXQz2TzOqlonpkIQNmHq-IOUeE4Sdtv-CoPnH4I50Ir3rfyTLxFF6c'
-});
-
-
 let vapidKey = {
     publicKey: 'BHA6KBBYvqHcdljFv3OuHBlGMQBkJGaW_eXQz2TzOqlonpkIQNmHq-IOUeE4Sdtv-CoPnH4I50Ir3rfyTLxFF6c',
     privateKey: 'UEtIIRWiVjB10V72coqFSO5SM_iisRTw8-ITz4BaJBk'
@@ -27,14 +20,7 @@ let sub = {
     }
 };
 
-let sbubis = {
-    endpoint: push2.endpoint,
-    expirationTime: push2.expirationTime,
-    keys: {
-        auth: push2.auth,
-        p256dh: push2.p256dh
-    }
-};
+
 
 const payload = 'test message';
 
@@ -48,7 +34,4 @@ const options = {
 }
 
 push.sendNotification(sub, payload, options);
-push.sendNotification(sbubis, payload, options);
-
-
 
