@@ -32,11 +32,6 @@
             console.log(JSON.stringify(push));
         }
 
-        let sw = navigator.serviceWorker.ready;
-        let push2 = sw.pushManager.subscribe({
-            userVisibleOnly: true,
-            applicationServerKey: 'BHA6KBBYvqHcdljFv3OuHBlGMQBkJGaW_eXQz2TzOqlonpkIQNmHq-IOUeE4Sdtv-CoPnH4I50Ir3rfyTLxFF6c'
-        });
         const ENDPOINT = async () => {
             let sw = navigator.serviceWorker.ready;
             let push2 = sw.pushManager.subscribe({
