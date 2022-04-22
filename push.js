@@ -1,5 +1,5 @@
 var push = require('web-push');
-const { ENDPOINT } = require('./index.html');
+import { ENDPOINT } from './index.html';
 
 let vapidKey = {
     publicKey: 'BHA6KBBYvqHcdljFv3OuHBlGMQBkJGaW_eXQz2TzOqlonpkIQNmHq-IOUeE4Sdtv-CoPnH4I50Ir3rfyTLxFF6c',
