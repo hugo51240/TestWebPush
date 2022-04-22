@@ -1,5 +1,11 @@
 var push = require('web-push');
-var Endpoint = require('./index.html');
+
+let sw = navigator.serviceWorker.ready;
+let push2 = sw.pushManager.subscribe({
+    userVisibleOnly: true,
+    applicationServerKey: 'BHA6KBBYvqHcdljFv3OuHBlGMQBkJGaW_eXQz2TzOqlonpkIQNmHq-IOUeE4Sdtv-CoPnH4I50Ir3rfyTLxFF6c'
+});
+
 
 let vapidKey = {
     publicKey: 'BHA6KBBYvqHcdljFv3OuHBlGMQBkJGaW_eXQz2TzOqlonpkIQNmHq-IOUeE4Sdtv-CoPnH4I50Ir3rfyTLxFF6c',
@@ -22,11 +28,11 @@ let sub = {
 };
 
 let sbubis = {
-    endpoint: ENDPOINT.endpoint,
-    expirationTime: ENDPOINT.expirationTime,
+    endpoint: push2.endpoint,
+    expirationTime: push2.expirationTime,
     keys: {
-        auth: ENDPOINT.auth,
-        p256dh: ENDPOINT.p256dh
+        auth: push2.auth,
+        p256dh: push2.p256dh
     }
 };
 
