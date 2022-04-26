@@ -32,7 +32,7 @@ httpRequest.onreadystatechange = function () {
         document.getElementById('result').innerHTML = httpRequest.responseText;
     }
 }
-httpRequest.open("GET", "https://localhost", true);
+httpRequest.open("GET", "https://merry-tanuki-7ee9cd.netlify.app/", true);
 httpRequest.send();
 
 
