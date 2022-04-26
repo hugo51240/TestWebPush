@@ -12,18 +12,18 @@ const CACHE = [
 self.addEventListener('install', (e) => {
   self.skipWaiting();
   console.log('[Service Worker] installation');
-  e.waitUntil(
+  /*e.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       console.log('[Service Worker] Mise en cache du contenu');
       return cache.addAll(CACHE);
     })
-  );
+  );*/
 });
 
 
 
 self.addEventListener('fetch', (e) => {
-  e.respondWith(
+  /*e.respondWith(
     caches.match(e.request).then((r) => {
       console.log('[Service Worker] Récupération de la ressource: ' + e.request.url);
       return r || fetch(e.request).then((response) => {
@@ -34,12 +34,12 @@ self.addEventListener('fetch', (e) => {
         });
       });
     })
-  );
+  );*/
 });
 
 
 self.addEventListener('activate', (event) => {
-  event.waitUntil(
+  /*event.waitUntil(
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cacheName => {
@@ -48,7 +48,7 @@ self.addEventListener('activate', (event) => {
         })
       );
     })
-  );
+  );*/
 });
 
 self.addEventListener('push', function (e) {

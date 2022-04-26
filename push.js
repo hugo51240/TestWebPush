@@ -12,11 +12,11 @@ push.setVapidDetails('mailto:test@test.com', vapidKey.publicKey, vapidKey.privat
 */
 
 let sub = {
-    endpoint: "https://fcm.googleapis.com/fcm/send/eOvbUUtpw4M:APA91bE1_UKaW2SPSmFj0SklyKapL3Ci2TZ86JxkuS3kX5euVYEYkO4vPjh_gGVPvAThZ_xajQ4mON98RODbNOXAXHhduovEYCPb6l60Q0vIoXRRdmZLPz2BPYWsIeSbUBnUAaY-MJMS",
+    endpoint: "https://fcm.googleapis.com/fcm/send/eZ92FcfG1L8:APA91bFS9dUSKWVZFFg2c_dCPgjhUbXSKC5TvhsNWxALdBswrWIHu5S5ZaA7t55nQNkcYaDebqG65lcEZbASK3w-9qguz6NpvAu36Yk2YaKjhp1vAtTbKTFazXo7uDnOGIHfbnbSyKJq",
     expirationTime: true,
     keys: {
-        p256dh: "BM-tN4OedjuKi-BiFZefTUvzsJJcsvAHNICfpDfdam3t__btQO2KV5k3J-HhtRFUoidot5vkcehrj67_LwZGRWE",
-        auth: "z1La_cvtn_4d1JbEx5oeKA"
+        p256dh: "BLOBNWDgJLCy3lXTp3_uuUjGoE3HCBsvsrJio9_JM_7RHPnEYjAXoQ1iPuCwtGn7_BiQQJZ66bHrlNAkslb8_rc",
+        auth: "BLdT3xIrvXtAy5MHdSK0mQ"
     }
 };
 
