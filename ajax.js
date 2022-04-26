@@ -37,6 +37,7 @@ httpRequest.send();
 
 
 /***** récupération fichier JSON *****/
+/*
 var xhr = new XMLHttpRequest();
 xhr.open('GET', '/index.php');
 xhr.onreadystatechange = function () {
@@ -46,3 +47,4 @@ xhr.onreadystatechange = function () {
     }
 }
 xhr.send();
+*/
