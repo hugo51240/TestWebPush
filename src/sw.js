@@ -1,7 +1,7 @@
 const CACHE_NAME = 'test-v1';
 const CACHE = [
   '/',
-  './index.html',
+  '/index.html',
   './style.css',
   './manifest.webmanifest',
   '/images/pwa-48x48.png',
@@ -78,7 +78,7 @@ self.addEventListener('push', function (e) {
 
 self.addEventListener('notificationclick', (e => {
   if (e.action === "explore") {
-    clients.openWindow("http://merry-tanuki-7ee9cd.netlify.app");
+    clients.openWindow("http://merry-tanuki.netlify.app");
     e.notification.close();
   }
   if (e.action === "close")
