@@ -1,9 +1,9 @@
 const CACHE_NAME = 'test-v1';
 const CACHE = [
   '/',
-  '/index.html',
-  '/style.css',
-  '/manifest.webmanifest',
+  './index.html',
+  './style.css',
+  './manifest.webmanifest',
   '/images/pwa-48x48.png',
   '/images/pwa-192x192.png',
   '/images/pwa-512x512.png',

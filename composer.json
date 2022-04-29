@@ -1,0 +1,14 @@
+{
+    "name": "patrice/webpushtest",
+    "autoload": {
+        "psr-4": {
+            "Patrice\\Webpushtest\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "hugo"
+        }
+    ],
+    "require": {}
+}
